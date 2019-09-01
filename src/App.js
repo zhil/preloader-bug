@@ -19,10 +19,6 @@ class App extends React.Component {
                     color="#ff9b20"
                     onRef={ref => (this.LoadingBar = ref)}
                 />
-
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-
                     <a
                         className="App-link"
                         href="#"
@@ -31,7 +27,14 @@ class App extends React.Component {
                     >
                         Click here to reproduce bug with color
                     </a>
-                </header>
+                <h1>Not working color</h1>
+                <div style={{height:"10px"}}>
+                    <div style={{backgroundColor: "#ff9b20", background: "", width: "40%", height: "10px"}}></div>
+                </div>
+                <h1>Working</h1>
+                <div style={{height:"10px"}}>
+                    <div style={{backgroundColor: "#ff9b20", width: "40%", height: "10px"}}></div>
+                </div>
             </div>
         );
     }
